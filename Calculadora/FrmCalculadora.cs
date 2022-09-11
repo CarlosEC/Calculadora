@@ -16,5 +16,29 @@ namespace Calculadora
         {
             InitializeComponent();
         }
+
+        private void FrmCalculadora_Load(object sender, EventArgs e)
+        {
+            rbtnSomar.Checked = true;
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            decimal num1;
+            decimal num2;
+            try
+            {
+                num1 = Convert.ToDecimal(tbNumero1.Text);
+                num2 = Convert.ToDecimal(tbNumero2.Text);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Campos devem ser preenchidos apenas com números. ");
+                throw;
+            }
+
+            var calc = Calculo.Resultado(num1, num2, groupBox1.TabIndex);
+            tbResultado.Text = calc;
+        }
     }
 }
