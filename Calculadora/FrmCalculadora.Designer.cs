@@ -30,14 +30,14 @@
         {
             this.tbNumero1 = new System.Windows.Forms.TextBox();
             this.tbNumero2 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbOperacao = new System.Windows.Forms.GroupBox();
             this.rbtnMultiplicar = new System.Windows.Forms.RadioButton();
             this.rbtnDividir = new System.Windows.Forms.RadioButton();
             this.rbtnSubtrair = new System.Windows.Forms.RadioButton();
             this.rbtnSomar = new System.Windows.Forms.RadioButton();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.tbResultado = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.gbOperacao.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbNumero1
@@ -54,18 +54,18 @@
             this.tbNumero2.Size = new System.Drawing.Size(135, 20);
             this.tbNumero2.TabIndex = 2;
             // 
-            // groupBox1
+            // gbOperacao
             // 
-            this.groupBox1.Controls.Add(this.rbtnMultiplicar);
-            this.groupBox1.Controls.Add(this.rbtnDividir);
-            this.groupBox1.Controls.Add(this.rbtnSubtrair);
-            this.groupBox1.Controls.Add(this.rbtnSomar);
-            this.groupBox1.Location = new System.Drawing.Point(12, 59);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(212, 92);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Opreação";
+            this.gbOperacao.Controls.Add(this.rbtnMultiplicar);
+            this.gbOperacao.Controls.Add(this.rbtnDividir);
+            this.gbOperacao.Controls.Add(this.rbtnSubtrair);
+            this.gbOperacao.Controls.Add(this.rbtnSomar);
+            this.gbOperacao.Location = new System.Drawing.Point(12, 59);
+            this.gbOperacao.Name = "gbOperacao";
+            this.gbOperacao.Size = new System.Drawing.Size(212, 92);
+            this.gbOperacao.TabIndex = 1;
+            this.gbOperacao.TabStop = false;
+            this.gbOperacao.Text = "Opreação";
             // 
             // rbtnMultiplicar
             // 
@@ -136,14 +136,14 @@
             this.ClientSize = new System.Drawing.Size(237, 321);
             this.Controls.Add(this.tbResultado);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbOperacao);
             this.Controls.Add(this.tbNumero2);
             this.Controls.Add(this.tbNumero1);
             this.Name = "FrmCalculadora";
             this.Text = "Calculadora";
             this.Load += new System.EventHandler(this.FrmCalculadora_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbOperacao.ResumeLayout(false);
+            this.gbOperacao.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,7 +153,7 @@
 
         private System.Windows.Forms.TextBox tbNumero1;
         private System.Windows.Forms.TextBox tbNumero2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbOperacao;
         private System.Windows.Forms.RadioButton rbtnMultiplicar;
         private System.Windows.Forms.RadioButton rbtnDividir;
         private System.Windows.Forms.RadioButton rbtnSubtrair;
