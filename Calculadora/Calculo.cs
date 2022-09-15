@@ -5,8 +5,6 @@ namespace Calculadora
 {
     static class Calculo
     {
-        
-
         private static decimal Somar(decimal num1, decimal num2)
         {
             return num1 + num2;
